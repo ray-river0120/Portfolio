@@ -1,0 +1,10 @@
+* {
+    font-family: Monserat, sans-serif;
+}
+
+@media screen and (max-width: 600px) {
+    .navbar-nav {
+        display: flex;
+        align-items: center;
+    }
+}
