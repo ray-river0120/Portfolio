@@ -1,10 +1,371 @@
 * {
-    font-family: Monserat, sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-@media screen and (max-width: 600px) {
-    .navbar-nav {
-        display: flex;
-        align-items: center;
+.hero {
+    height: 100vh;
+    width: 100%;
+    background-image: url("../images/4014646.webp");
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 45px 8%;
+}
+
+.logo {
+    color: white;
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+.bars {
+    background-color: rgb(89, 65, 221);
+}
+
+span {
+    color: blue;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+
+.w-100 {
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li a {
+    color: white !important;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: blue;
+    transition: .5s;
+}
+
+.btn {
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    padding: 10px 25px;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform .4s;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    border: 2px solid blue;
+    color: white;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+}
+
+h1 {
+    color: white;
+    margin: 20px 0px 20px;
+    font-size: 3rem;
+}
+
+h3 {
+    color: white;
+    margin-bottom: 30px;
+    font-size: 25px;
+}
+
+h4 {
+    color: hsl(246, 82%, 73%);
+}
+
+.newslatter {
+    width: 380px;
+    max-width: 100%;
+    position: relative;
+}
+
+.newslatter form input {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 130px 14px 15px;
+    border: 2px solid blue;
+    outline: none;
+    border-radius: 30px;
+}
+
+.subscribe {
+    position: absolute;
+    display: inline-block;
+    border: none;
+    outline: none;
+    padding: 10px 25px;
+    border-radius: 30px;
+    background-color: blue;
+    color: white;
+    box-shadow: 0px 0px 5px black, 0px 0px 20px #2a53d8;
+    top: 5px;
+    right: 5px;
+}
+
+.about {
+    width: 100%;
+    padding: 100px 0px;
+    background-color: #191919;
+}
+
+.about img {
+    width: 430px;
+    height: auto;
+}
+
+.about-text {
+    width: 550px;
+}
+
+.main {
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 1043px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .about-text {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .about img {
+        width: 100%;
+    }
+
+    .about-text h2 {
+        color: white;
+        text-align: center;
+    }
+
+    .about-text h5 {
+        color: white;
+        text-align: center;
+    }
+
+    .about-text p {
+        text-align: center;
+    }
+}
+
+.about-text h2 {
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+}
+
+.about-text h5 {
+    color: white;
+    letter-spacing: 2px;
+    font-size: 22px;
+    text-transform: capitalize;
+}
+
+.about-text p {
+    color: hsl(246, 82%, 73%);
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    margin-bottom: 45px;
+}
+
+.service {
+    background: #101010;
+    width: 100%;
+    padding: 100px 0px;
+}
+
+.title h2 {
+    color: white;
+    font-size: 2.5rem;
+    margin: 30px auto;
+    text-align: center;
+    max-width: 100%;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+
+@media screen and (max-width: 1043px) {
+    .box {
+        flex-direction: column;
+    }
+}
+
+.card {
+    height: 365px;
+    width: 365px;
+    padding: 20px 35px;
+    background: #191919;
+    border-radius: 19px;
+    box-shadow: 0px 0px 5px black, 0px 0px 20px hsl(246, 82%, 73%);
+    margin: 15px;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+
+.card i {
+    font-size: 3rem;
+    display: block;
+    text-align: center;
+    margin: 25px 0px;
+    color: blue;
+}
+
+h5 {
+    color: white;
+    font-size: 22px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.pra {
+    color: hsl(246, 82%, 73%);
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 1rem;
+}
+
+#button1 {
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    padding: 10px 25px;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform .4s;
+}
+
+#button1:hover {
+    transform: scale(1.1);
+    border: 2px solid blue;
+    color: white;
+    background-color: #101010;
+}
+
+.contact-me {
+    width: 100%;
+    height: 290px;
+    background-color: #191919;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-me p {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+#button2 {
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    padding: 10px 25px;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform .4s;
+}
+
+#button2:hover {
+    transform: scale(1.1);
+    border: 2px solid blue;
+    color: white;
+    background-color: #101010;
+}
+
+footer {
+    width: 100%;
+    height: 400px;
+    background-color: #191919;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p:nth-child(1) {
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+footer p:nth-child(2) {
+    color: hsl(246, 82%, 73%);
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 1rem;
+    width: 500px;
+    text-align: center;
+}
+
+.social {
+    display: flex;
+}
+
+.social a {
+    font-size: 2.5rem;
+    color: hsl(246, 82%, 73%);
+    margin: 10px;
+}
+
+.social a:hover {
+    color: blue;
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 1043px) {
+    .social {
+        flex-direction: column;
+    }
+
+    .contact-me p {
+        text-align: center;
     }
 }
