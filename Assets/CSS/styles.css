@@ -28,6 +28,10 @@ nav {
     cursor: pointer;
 }
 
+.logo:hover {
+    color: #486ccc;
+}
+
 .bars {
     background-color: rgb(89, 65, 221);
 }
